@@ -84,6 +84,26 @@ VOLUME = {
     {
       "name": "Yottaliter",
       "symbol": "Yl"
+    },
+    {
+      "name": "Fluid Ounce",
+      "symbol": "floz"
+    },
+    {
+      "name": "Gill",
+      "symbol": "gi"
+    },
+    {
+      "name": "Pint",
+      "symbol": "pt"
+    },
+    {
+      "name": "Quart",
+      "symbol": "qt"
+    },
+    {
+      "name": "Gallon",
+      "symbol": "gal"
     }
   ]
 }
