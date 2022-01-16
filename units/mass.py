@@ -84,6 +84,38 @@ MASS = {
     {
       "name": "Yottagram",
       "symbol": "Yg"
+    },
+    {
+      "name": "Grain",
+      "symbol": "gr"
+    },
+    {
+      "name": "Drachm",
+      "symbol": "dr"
+    },
+    {
+      "name": "Ounce",
+      "symbol": "oz"
+    },
+    {
+      "name": "Pound",
+      "symbol": "lb"
+    },
+    {
+      "name": "Stone",
+      "symbol": "st"
+    },
+    {
+      "name": "Quarter",
+      "symbol": "qtr or qr"
+    },
+    {
+      "name": "Hundredweight",
+      "symbol": "cwt"
+    },
+    {
+      "name": "Metric Ton",
+      "symbol": "t"
     }
   ]
 }
