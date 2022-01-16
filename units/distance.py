@@ -84,6 +84,50 @@ DISTANCE = {
     {
       "name": "Yottameter",
       "symbol": "Ym"
+    },
+    {
+      "name": "Thou",
+      "symbol": "th"
+    },
+    {
+      "name": "Inch",
+      "symbol": "in"
+    },
+    {
+      "name": "Foot",
+      "symbol": "ft"
+    },
+    {
+      "name": "Yard",
+      "symbol": "yd"
+    },
+    {
+      "name": "Mile",
+      "symbol": "mi"
+    },
+    {
+      "name": "Link",
+      "symbol": "li"
+    },
+    {
+      "name": "Rod",
+      "symbol": "rd"
+    },
+    {
+      "name": "Chain",
+      "symbol": "ch"
+    },
+    {
+      "name": "Furlong",
+      "symbol": "fur"
+    },
+    {
+      "name": "League",
+      "symbol": "lea"
+    },
+    {
+      "name": "Light year",
+      "symbol": "ly"
     }
   ]
 }
