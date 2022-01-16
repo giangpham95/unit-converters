@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Welcome to Unit Converter</h1>
+<form>
+  <div>
+    <label for="unit_category">Select Unit Category</label>
+    <select name="unit_category">
+      {% for category in categories %}
+      <option value="{{ category }}">{{ category }}</option>
+      {% endfor%}
+    </select>
+  </div>
+
+  <div>
+    <label for="from_unit">From Unit</label>
+    <select name="from_unit" id="from_unit">
+      {% for option in options %}
+
+      {% endfor %}
+    </select>
+  </div>
+  
+  <div>
+    <label for="to_unit">To Unit</label>
+    <select id="to_unit" name="to_unit">
+
+    </select>
+  </div>
+
+  <div>
+    <label for="amount">Amount</label>
+    <input type="number" step="any" id="amount" name="amount">
+  </div>
+
+  <button type="submit">Convert</button>
+</form>
+{% endblock %}
