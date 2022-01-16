@@ -4,7 +4,7 @@
 <form>
   <div>
     <label for="unit_category">Select Unit Category</label>
-    <select name="unit_category">
+    <select name="unit_category" id="unit_category">
       {% for category in categories %}
       <option value="{{ category }}">{{ category }}</option>
       {% endfor%}
@@ -13,18 +13,12 @@
 
   <div>
     <label for="from_unit">From Unit</label>
-    <select name="from_unit" id="from_unit">
-      {% for option in options %}
-
-      {% endfor %}
-    </select>
+    <select name="from_unit" id="from_unit"></select>
   </div>
   
   <div>
     <label for="to_unit">To Unit</label>
-    <select id="to_unit" name="to_unit">
-
-    </select>
+    <select id="to_unit" name="to_unit"></select>
   </div>
 
   <div>
@@ -34,4 +28,28 @@
 
   <button type="submit">Convert</button>
 </form>
+<script type="text/javascript">
+  var categories = JSON.parse('{{ categories|tojson|safe }}');
+
+  var unit_category = document.getElementById("unit_category");
+  var from_unit = document.getElementById('from_unit');
+  var to_unit = document.getElementById('to_unit');
+
+  function update() {
+    from_unit.innerHTML = '';
+    to_unit.innerHTML = '';
+
+    units = categories[unit_category.value]['units'];
+    console.log(units);
+    var nodeContent = ""
+    for (var i in units) {
+      nodeContent += "<option value='" + units[i]['symbol'] + "'>" + units[i]['name'] + " (" + units[i]['symbol'] + ") </option>";    
+    }
+    from_unit.innerHTML = nodeContent;
+    to_unit.innerHTML = nodeContent;
+  }
+
+  update();
+  unit_category.onchange = () => update();
+</script>
 {% endblock %}

@@ -8,7 +8,7 @@ unit_converter_manager = UnitConverterManager()
 
 @app.route('/')
 def index():
-  unit_categories = [item['name'] for item in UNITS ]
+  unit_categories = UNITS
   return render_template('content.html', categories=unit_categories)
 
 @app.route('/updateUnitOnCategoryChange')
