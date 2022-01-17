@@ -2,7 +2,7 @@
 
 ---
 
-A unit conversion web application and console application in Python.
+A unit conversion web application in Python.
 
 ## Requirements
 
@@ -21,5 +21,9 @@ Python 3 & above
 | Pressure | pascal (Pa), torr (torr), pounds per square inch (psi), bar (bar), technical atmosphere (at), atmosphere (atm), kilogram centimeter square (kgcm2), millimeter of Mercury (mmHg), millimeter of water (mmH2O) |
 | Energy | watt (w), joule (j), horse per hour (hp), Calorie (cal), British thermal unit, ... |
 | Speed | kilometers per hour (kph), miles per hour (mph), knots (kt), feet per second (ft/s) |
-| Force | Newtow (N), dyne (dyn), Kilogram-Force (KF), Poundal (pdl) |
-| Digital Storage | bit (bit), byte (byte), kilobyte (kB), megabyte (mB), gigabyte (gB), terabyte (TB), petabyte (PB), exabyte (EB), zettabyte (ZB), yottabyte (YB)
+| Force | Newtow (N), dyne (dyn), Kilogram-Force (KF), Poundal (pdl), ... |
+| Digital Storage | bit (bit), hectobit (hb), kilobit (kb), megabit (Mb), gigabit (Gb), terrabit (Tb), petabit (Pb), exabit (Eb), zettabit (Zb), yottabit (Yb), kibibit (kib), mebibit (Mib), gibibit (Gib), tebibit (Tib), pebibit (Pib), exbibit (Eib), zettabit (Zib), yobibit (Yib), byte (byte), kilobyte (kB), megabyte (MB), gigabyte (GB), terabyte (TB), petabyte (PB), exabyte (EB), zettabyte (ZB), yottabyte (YB), kibibyte (kiB), mebibyte (MiB), gibibyte (GiB), tebibyte (TiB), pebibyte (PiB), exbibyte (EiB), zebibyte (ZiB), yobibyte (YiB) |
+
+## Give a try
+
+[Unit-Converters](https://unit-converters.herokuapp.com/)
