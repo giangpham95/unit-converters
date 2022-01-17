@@ -1,6 +1,7 @@
 from units.digital_storage import DIGITAL_STORAGE
 from units.distance import DISTANCE
 from units.energy import ENERGY
+from units.force import FORCE
 from units.mass import MASS
 from units.temperature import TEMPERATURE
 from units.time import TIME
@@ -10,6 +11,7 @@ UNITS = {
   "Digital Storage": DIGITAL_STORAGE,
   "Distance": DISTANCE,
   "Energy": ENERGY,
+  "Force": FORCE,
   "Mass": MASS,
   "Temperature": TEMPERATURE,
   "Time": TIME,
