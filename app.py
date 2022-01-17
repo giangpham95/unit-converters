@@ -26,3 +26,6 @@ def convert():
     "converted_amount": result
   }
   return jsonify(ans)
+
+if __name__ == '__main__':
+  app.run()
