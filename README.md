@@ -18,8 +18,8 @@ Python 3 & above
 | Volume | **Metric Volume:** yoctoliter (yl) to yottaliter (Yl) **Imperal Volume:** fluid ounce (floz), gill (gi), pint (pt), quart (qt), gallon (gal) |
 | Mass and Weight | **Metric Mass:** yoctogram (yg) to Yottagram (Yg) **Imperal Mass:** grain (gr), drachm (dr), ounce (oz), pound (lb), stone (st), quarter (qtr or qr), hundredweight (cwt), ton (t) |
 | Time | yotosecond (ys), zeptosecond (zs), attosecond (as), femtosecond (fs), picosecond (ps), nanosecond (ns), microsecond (&mu;s), millisecond (ms), centisecond (cs), decisecond (ds), second (s), decasecond (das), hectosecond (hs), minute (min), kilosecond (ks), hour (hr), day (day), week (wk), megasecond (Ms), month (mo), year (yr), gigasecond (Gs), terasecond (Ts), petasecond (Ps), exasecond (Es), zettasecond (Zs), yottasecond (Ys) |
-| Pressure | pascal (Pa), torr (torr), pounds per square inch (psi), bar (bar), technical atmosphere (at), atmosphere (atm) |
-| Energy | watt (w), joule (j), horse per hour (hp), Calorie (cal), British thermal unit |
+| Pressure | pascal (Pa), torr (torr), pounds per square inch (psi), bar (bar), technical atmosphere (at), atmosphere (atm), kilogram centimeter square (kgcm2), millimeter of Mercury (mmHg), millimeter of water (mmH2O) |
+| Energy | watt (w), joule (j), horse per hour (hp), Calorie (cal), British thermal unit, ... |
 | Speed | kilometers per hour (kph), miles per hour (mph), knots (kt), feet per second (ft/s) |
 | Force | Newtow (N), dyne (dyn), Kilogram-Force (KF), Poundal (pdl) |
 | Digital Storage | bit (bit), byte (byte), kilobyte (kB), megabyte (mB), gigabyte (gB), terabyte (TB), petabyte (PB), exabyte (EB), zettabyte (ZB), yottabyte (YB)
