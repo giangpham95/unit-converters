@@ -1,6 +1,6 @@
 PRESSURE = {
   "name": "Pressure",
-  "units": {
+  "units": [
     {
       "name": "Pascal",
       "symbol": "Pa"
@@ -73,5 +73,5 @@ PRESSURE = {
       "name": "Feet of Water",
       "symbol": "ftH2O"
     }
-  }
+  ]
 }

@@ -12,7 +12,7 @@ class UnitConverterManager():
       "Speed": converters.SpeedConverter,
       "Volume": converters.VolumeConverter,
       "Energy": converters.EnergyConverter,
-      "DigitalStorage": converters.DigitalStorageConverter
+      "Digital Storage": converters.DigitalStorageConverter
     }
 
   def register_format(self, format, converter):

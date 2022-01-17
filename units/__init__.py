@@ -8,14 +8,14 @@ from units.temperature import TEMPERATURE
 from units.time import TIME
 from units.volume import VOLUME
 
-UNITS = [
-  DIGITAL_STORAGE,
-  DISTANCE,
-  ENERGY,
-  FORCE,
-  MASS,
-  PRESSURE,
-  TEMPERATURE,
-  TIME,
-  VOLUME
-]
+UNITS = {
+  "Digital Storage": DIGITAL_STORAGE,
+  "Distance": DISTANCE,
+  "Energy": ENERGY,
+  "Force": FORCE,
+  "Mass": MASS,
+  "Pressure": PRESSURE,
+  "Temperature": TEMPERATURE,
+  "Time": TIME,
+  "Volume": VOLUME
+}

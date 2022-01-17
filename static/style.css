@@ -1,0 +1,28 @@
+.center_text {
+  text-align: center;
+}
+
+.padding {
+  padding: .5rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-group {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.right-group {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+h1 {
+  font-size: 2rem;
+}

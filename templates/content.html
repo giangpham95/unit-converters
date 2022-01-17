@@ -1,53 +1,82 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Welcome to Unit Converter</h1>
-<form>
-  <div>
-    <label for="unit_category">Select Unit Category</label>
-    <select name="unit_category" id="unit_category">
-      {% for category in categories %}
-      <option value="{{ category }}">{{ category }}</option>
-      {% endfor%}
-    </select>
-  </div>
-
-  <div>
-    <label for="from_unit">From Unit</label>
-    <select name="from_unit" id="from_unit"></select>
-  </div>
+<h1 class="center_text">Welcome to Unit Converter</h1>
+<div class="flex two center">
+  <form id="myForm" action="{{ url_for('convert') }}" method="post">
+    <div class="padding">
+      <label for="unit_category"><strong>Select Unit Category</strong></label>
+      <select name="unit_category" id="unit_category">
+        {% for category in categories %}
+        <option value="{{ category }}">{{ category }}</option>
+        {% endfor%}
+      </select>
+    </div>
   
-  <div>
-    <label for="to_unit">To Unit</label>
-    <select id="to_unit" name="to_unit"></select>
-  </div>
+    <div class="padding">
+      <label for="from_unit"><strong>From Unit</strong></label>
+      <select name="from_unit" id="from_unit"></select>
+    </div>
+    
+    <div class="padding">
+      <label for="to_unit"><strong>To Unit</strong></label>
+      <select id="to_unit" name="to_unit"></select>
+    </div>
+  
+    <div class="padding">
+      <label for="amount"><strong>Amount</strong></label>
+      <input type="number" step="any" id="amount" name="amount">
+    </div>
+  
+    <div class="button-group padding">
+      <div class="left-group">
+        <button type="submit" class="success">Convert</button>
+      </div>
+      <div class="right-group">
+        <button type="reset" class="error">Reset</button>
+      </div>
+    </div>
+  </form>
+</div>
 
-  <div>
-    <label for="amount">Amount</label>
-    <input type="number" step="any" id="amount" name="amount">
-  </div>
+<div id="answer" class="center_text"></div>
 
-  <button type="submit">Convert</button>
-</form>
 <script type="text/javascript">
   var categories = JSON.parse('{{ categories|tojson|safe }}');
 
   var unit_category = document.getElementById("unit_category");
   var from_unit = document.getElementById('from_unit');
   var to_unit = document.getElementById('to_unit');
+  var form = document.getElementById('myForm');
+  var answer = document.getElementById('answer');
 
   function update() {
     from_unit.innerHTML = '';
     to_unit.innerHTML = '';
 
     units = categories[unit_category.value]['units'];
-    console.log(units);
-    var nodeContent = ""
+    var nodeContent = "";
     for (var i in units) {
       nodeContent += "<option value='" + units[i]['symbol'] + "'>" + units[i]['name'] + " (" + units[i]['symbol'] + ") </option>";    
     }
     from_unit.innerHTML = nodeContent;
     to_unit.innerHTML = nodeContent;
   }
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(form);
+    fetch("{{url_for('convert')}}", {
+      method: "POST",
+      body: formData,
+    }).then(response => response.json()).then(response => {
+      console.log(response);
+      answer.innerHTML = '';
+      answer.innerHTML = 
+        response['original_amount'] + ' ' + 
+        response['from_unit'] + " is " +
+        response['converted_amount'] + " " + response['to_unit'];
+    });
+  })
 
   update();
   unit_category.onchange = () => update();
